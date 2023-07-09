@@ -1,0 +1,34 @@
+names:
+- Alsaeuchip
+- BananaKick
+- CaramelCornMaple
+- Cheetos
+- CornChips
+- Gamjakkang
+- Jjanggu
+- JollyPong
+- Kkobugchip
+- Kkochgelang
+- Kkulkkwabaegi
+- KokkalCorn
+- Koncho
+- Matdongsan
+- Ogamja
+- Pocachip_Onion
+- Pocachip_Original
+- Postick
+- Saeukkang
+- Sunchip
+- Swingchip
+- Yangpaling
+- konchi
+nc: 23
+roboflow:
+  license: CC BY 4.0
+  project: snack02
+  url: https://universe.roboflow.com/project-5x1ny/snack02/dataset/3
+  version: 3
+  workspace: project-5x1ny
+test: ../test/images
+train: snack02-3/train/images
+val: snack02-3/valid/images
