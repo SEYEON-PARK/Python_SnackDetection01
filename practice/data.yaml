@@ -27,9 +27,9 @@ nc: 24
 roboflow:
   license: CC BY 4.0
   project: snack01
-  url: https://universe.roboflow.com/project-kz30s/snack01/dataset/1
-  version: 1
+  url: https://universe.roboflow.com/project-kz30s/snack01/dataset/3
+  version: 3
   workspace: project-kz30s
 test: ../test/images
-train: snack01-1/train/images
-val: snack01-1/valid/images
+train: snack01-3/train/images
+val: snack01-3/valid/images
