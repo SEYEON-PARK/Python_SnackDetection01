@@ -4,7 +4,7 @@ import cv2
 import numpy as np
 import imutils
 import torch # 토치 추가
-from gtts import gTTS
+from gtts import gTTS # TTS 서비스를 위해 추가
 from playsound import playsound
 import os
   
