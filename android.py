@@ -5,7 +5,7 @@ import numpy as np
 import imutils
 import torch # 토치 추가
 from gtts import gTTS # TTS 서비스를 위해 추가
-from playsound import playsound
+from playsound import playsound # 음성 파일 나오게 하기 위해
 import os
   
 date =""
