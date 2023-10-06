@@ -27,7 +27,7 @@ while True: # 무한 반복
     results=model(frame) # 학습시킨 모델로 frame 분석한 결과를 results에 대입하기
 
     print(len(results.pandas().xyxy[0].xmin)) # 현재 탐지되는 객체 개수 출력하기
-    if(len(results.pandas().xyxy[0].xmin)>=2):
+    if(len(results.pandas().xyxy[0].xmin)>=2): # 만약, 탐지되는 객체가 2개 이상이라면
         for i in range(len(results.pandas().xyxy[0].xmin)):
             print(results.pandas().xyxy[0].name[i])
             date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." 
