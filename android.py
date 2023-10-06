@@ -17,7 +17,7 @@ blue_color=(255,0,0) # B, G, R 순서이다!
 url = "http://192.168.219.103:8080/shot.jpg"
   
 # While loop to continuously fetching data from the Url
-while True:
+while True: # 무한 반복
     frame_resp = requests.get(url)
     frame_arr = np.array(bytearray(frame_resp.content), dtype=np.uint8)
     frame = cv2.imdecode(frame_arr, -1)
