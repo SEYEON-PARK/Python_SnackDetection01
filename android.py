@@ -31,7 +31,7 @@ while True: # 무한 반복
         for i in range(len(results.pandas().xyxy[0].xmin)): # 탐지된 객체 수 만큼 반복
             print(results.pandas().xyxy[0].name[i])
             date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." 
-    else:
+    else: # 만약, 탐지된 객체의 개수가 2개보다 작다면
         for i in range(len(results.pandas().xyxy[0].xmin)):
             print(results.pandas().xyxy[0].name[i], results.pandas().xyxy[0].confidence[i])
             if(results.pandas().xyxy[0].name[i]=="CornChips" and results.pandas().xyxy[0].confidence[i]>0.5):
