@@ -34,7 +34,7 @@ while True: # 무한 반복
     else: # 만약, 탐지된 객체의 개수가 2개보다 작다면
         for i in range(len(results.pandas().xyxy[0].xmin)): # 탐지된 객체가 하나라도 있으면 반복(없으면 반복문을 돌지 않음. 만약, 이 문장이 없으면 객체가 탐지되지 않았을 때 잘못된 인덱스로 접근할 수 있음.)
             print(results.pandas().xyxy[0].name[i], results.pandas().xyxy[0].confidence[i]) # 탐지된 객체의 name과 confidence를 출력한다.(과자 이름, 몇 %로 확신했는지)
-            if(results.pandas().xyxy[0].name[i]=="CornChips" and results.pandas().xyxy[0].confidence[i]>0.5):
+            if(results.pandas().xyxy[0].name[i]=="CornChips" and results.pandas().xyxy[0].confidence[i]>0.5): # 만약, 탐지된 객체의 name이 "CornChips"이고, confidence가 0.5 초과라면 
                 date="콘칩입니다."
                 frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3)
                 cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
