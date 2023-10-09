@@ -36,7 +36,7 @@ while True: # 무한 반복
             print(results.pandas().xyxy[0].name[i], results.pandas().xyxy[0].confidence[i]) # 탐지된 객체의 name과 confidence를 출력한다.(과자 이름, 몇 %로 확신했는지)
             if(results.pandas().xyxy[0].name[i]=="CornChips" and results.pandas().xyxy[0].confidence[i]>0.5): # 만약, 탐지된 객체의 name이 "CornChips"이고, confidence가 0.5 초과라면 
                 date="콘칩입니다." # 콘칩임을 알려주는 텍스트 문자열
-                frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3)
+                frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3) # 사각형으로 객체 표시하기!
                 cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
             
             elif(results.pandas().xyxy[0].name[i]=="Gamjakkang" and results.pandas().xyxy[0].confidence[i]>0.5):
