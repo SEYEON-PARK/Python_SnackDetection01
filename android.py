@@ -96,7 +96,7 @@ while True: # 무한 반복
             
     # Display the resulting frame
     cv2.imshow("Android_cam", frame) # frame 보여주기
-    if(date!=""):
+    if(date!=""): # 만약, date가 빈 문자열이 아니라면
         tts = gTTS(text=date, lang='ko')
         tts.save("snack.mp3")
         playsound("snack.mp3")
