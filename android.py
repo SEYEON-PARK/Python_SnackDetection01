@@ -99,7 +99,7 @@ while True: # 무한 반복
     if(date!=""): # 만약, date가 빈 문자열이 아니라면
         tts = gTTS(text=date, lang='ko')
         tts.save("snack.mp3") # 음성 파일 저장하기
-        playsound("snack.mp3")
+        playsound("snack.mp3") # 음성 파일 저장하기
         os.remove("snack.mp3") # 만든 파일은 바로 지우기!
         date="" # 해당 과자라는 메시지 말하는 거 한 번만 하게 하기 위해서 
 	#   
