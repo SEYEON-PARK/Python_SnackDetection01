@@ -1,5 +1,5 @@
 # 사진 파일들 이름 바꾸기! 0000~쭉!
-import os
+import os # 필요한 모듈 import
    
 folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack01/pic05"
 
