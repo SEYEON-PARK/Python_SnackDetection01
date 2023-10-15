@@ -21,7 +21,7 @@ while(True):
     
     # Capture the video frame
 	# by frame
-	ret, frame = vid.read()
+	ret, frame = vid.read() # frame 읽기!
 	#frame = cv2.resize(frame, dsize=(640,640), interpolation=cv2.INTER_AREA)
 	results=model(frame) # 만든 모델로 frame 분석!
 	'''
