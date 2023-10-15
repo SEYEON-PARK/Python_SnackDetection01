@@ -25,7 +25,8 @@ while(True):
 	#frame = cv2.resize(frame, dsize=(640,640), interpolation=cv2.INTER_AREA)
 	results=model(frame) # 만든 모델로 frame 분석!
 	'''
-	print(results.pandas().xyxy[0].to_json(orient="records"))
+ 	# 정보 출력하기!
+	print(results.pandas().xyxy[0].to_json(orient="records")) #
 	print(results.pandas().xyxy[0].xmin)
 	'''
 
