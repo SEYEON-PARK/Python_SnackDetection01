@@ -12,7 +12,7 @@ model = torch.hub.load('ultralytics/yolov5', 'custom', path='bestLast_final.pt')
 # define a video capture object
 vid = cv2.VideoCapture(0) # 카메라 객체 받아오기
 
-blue_color=(255,0,0)
+blue_color=(255,0,0) # B, G, R 순서이기 때문에 파란색이 된다!
 
 while(True):
 	img=np.zeros((1080, 1920, 3), np.uint8) # 빈 캔버스 만들기
