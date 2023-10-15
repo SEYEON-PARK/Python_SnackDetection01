@@ -2,7 +2,7 @@
 import cv2
 import torch # 토치 추가
 import numpy as np
-from gtts import gTTS
+from gtts import gTTS # TTS 서비스 제공하기 위해
 from playsound import playsound
 import os
 
