@@ -37,7 +37,7 @@ while(True):
 	if(len(results.pandas().xyxy[0].xmin)>=2):
 		for i in range(len(results.pandas().xyxy[0].xmin)):
 			print(results.pandas().xyxy[0].name[i])
-		date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요."
+		date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." # 메시지 문자열
 	else:
 		for i in range(len(results.pandas().xyxy[0].xmin)):
 			print(results.pandas().xyxy[0].name[i], results.pandas().xyxy[0].confidence[i])
