@@ -10,7 +10,7 @@ date =""
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='bestLast_final.pt')  # local model
 
 # define a video capture object
-vid = cv2.VideoCapture(0)
+vid = cv2.VideoCapture(0) # 카메라 객체 받아오기
 
 blue_color=(255,0,0)
 
