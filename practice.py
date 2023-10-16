@@ -35,7 +35,7 @@ while(True):
 
 	# 길이가 2 이상이라면 다른 메시지 추가!
 	if(len(results.pandas().xyxy[0].xmin)>=2):
-		for i in range(len(results.pandas().xyxy[0].xmin)):
+		for i in range(len(results.pandas().xyxy[0].xmin)): # 잡힌 객체 수만큼 반복
 			print(results.pandas().xyxy[0].name[i])
 		date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." # 메시지 문자열
 	else:
