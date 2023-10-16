@@ -39,7 +39,7 @@ while(True):
 			print(results.pandas().xyxy[0].name[i]) # 어떤 객체가 잡혔는지 출력하기
 		date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." # 메시지 문자열
 	else:
-		for i in range(len(results.pandas().xyxy[0].xmin)):
+		for i in range(len(results.pandas().xyxy[0].xmin)): # 잡힌 객체 수만큼 반복(안 잡혔거나, 하나 잡혔거나)
 			print(results.pandas().xyxy[0].name[i], results.pandas().xyxy[0].confidence[i])
 			if(results.pandas().xyxy[0].name[i]=="CornChips" and results.pandas().xyxy[0].confidence[i]>0.5):
 				date="콘칩입니다."
