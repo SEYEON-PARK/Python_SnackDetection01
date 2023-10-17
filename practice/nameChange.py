@@ -7,7 +7,7 @@ folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack
 for count, filename in enumerate(os.listdir(folder)): # 사진들이 리스트(?) 안에 들어있다.
     dst = f"{str(count+2817).zfill(4)}.jpg" # 이 이름으로 저장할 거다!
     src =f"{folder}/{filename}"  # foldername/filename, if .py file is outside folder
-    dst =f"{folder}/{dst}"
+    dst =f"{folder}/{dst}" # 바꾸고 싶은 파일 이름
         
     # rename() function will
     # rename all the files
