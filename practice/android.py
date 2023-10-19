@@ -11,7 +11,7 @@ import os
 date =""
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='bestLast_final.pt')  # local model
 
-blue_color=(255,0,0)
+blue_color=(255,0,0) # B, G, R 순서!
 
 # Replace the below URL with your own. Make sure to add "/shot.jpg" at last.
 url = "http://192.168.219.103:8080/shot.jpg"
