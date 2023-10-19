@@ -1,7 +1,7 @@
 # Import essential libraries
 import requests
 import cv2 # openCV를 사용하기 위해
-import numpy as np
+import numpy as np # numpy를 np라는 이름으로 사용
 import imutils
 import torch # 토치 추가
 from gtts import gTTS
