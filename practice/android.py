@@ -24,7 +24,7 @@ while True:
     #frame = imutils.resize(frame, width=640, height=640)
     #frame = cv2.resize(frame, dsize=(640,640), interpolation=cv2.INTER_AREA)
 
-    results=model(frame)
+    results=model(frame) # 모델로 프레임 분석!
 
     print(len(results.pandas().xyxy[0].xmin))
     if(len(results.pandas().xyxy[0].xmin)>=2):
