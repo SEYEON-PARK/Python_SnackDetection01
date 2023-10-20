@@ -26,7 +26,7 @@ while True: # 무한 반복
 
     results=model(frame) # 모델로 프레임 분석!
 
-    print(len(results.pandas().xyxy[0].xmin))
+    print(len(results.pandas().xyxy[0].xmin)) # 탐지된 객체 개수 출력하기
     if(len(results.pandas().xyxy[0].xmin)>=2):
         for i in range(len(results.pandas().xyxy[0].xmin)):
             print(results.pandas().xyxy[0].name[i])
