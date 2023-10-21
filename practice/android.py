@@ -29,7 +29,7 @@ while True: # 무한 반복
     print(len(results.pandas().xyxy[0].xmin)) # 탐지된 객체 개수 출력하기
     if(len(results.pandas().xyxy[0].xmin)>=2): # 만약, 탐지된 객체가 2개 이상이라면
         for i in range(len(results.pandas().xyxy[0].xmin)):
-            print(results.pandas().xyxy[0].name[i])
+            print(results.pandas().xyxy[0].name[i]) # 탐지된 객체 이름 출력하기
             date="과자가 두 개 이상 잡혔습니다. 하나만 보여주세요." 
     else:
         for i in range(len(results.pandas().xyxy[0].xmin)):
