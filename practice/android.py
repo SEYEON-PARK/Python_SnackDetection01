@@ -5,7 +5,7 @@ import numpy as np # numpy를 np라는 이름으로 사용
 import imutils
 import torch # 토치 추가
 from gtts import gTTS # TTS 서비스를 제공하기 위해
-from playsound import playsound
+from playsound import playsound # 음성 파일을 재생하기 위해
 import os
   
 date =""
