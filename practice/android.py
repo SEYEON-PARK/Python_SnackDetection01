@@ -95,7 +95,7 @@ while True: # 무한 반복
                 cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
             
     # Display the resulting frame
-    cv2.imshow("Android_cam", frame)
+    cv2.imshow("Android_cam", frame) # "Android_cam" 윈도우에 frame 보여주기!
     if(date!=""):
         tts = gTTS(text=date, lang='ko')
         tts.save("snack.mp3")
