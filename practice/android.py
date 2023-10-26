@@ -114,7 +114,7 @@ while True: # 무한 반복
     if cv2.waitKey(1) == 27:
         break
   
-cv2.destroyAllWindows()
+cv2.destroyAllWindows() # 모든 윈도우 닫기!
 
 '''
 # Import essential libraries
