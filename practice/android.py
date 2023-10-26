@@ -98,7 +98,7 @@ while True: # 무한 반복
     cv2.imshow("Android_cam", frame) # "Android_cam" 윈도우에 frame 보여주기!
     if(date!=""):
         tts = gTTS(text=date, lang='ko')
-        tts.save("snack.mp3")
+        tts.save("snack.mp3") # 음성 파일 저장하기!
         playsound("snack.mp3")
         os.remove("snack.mp3") # 만든 파일은 바로 지우기!
         date="" # 해당 과자라는 메시지 말하는 거 한 번만 하게 하기 위해서 
