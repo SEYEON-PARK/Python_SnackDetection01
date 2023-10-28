@@ -1,7 +1,7 @@
 # import the opencv library
 import cv2 # openCV 사용하기 위해
 import torch # 토치 추가
-import numpy as np
+import numpy as np # numpy 라이브러리 사용하기 위해
 import pyttsx3
 
 s = pyttsx3.init()  
