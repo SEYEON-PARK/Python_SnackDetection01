@@ -10,7 +10,7 @@ data = ""
 model = torch.hub.load('ultralytics/yolov5', 'custom', path='snackBest02(300).pt')  # local model
 
 # define a video capture object
-vid = cv2.VideoCapture(0)
+vid = cv2.VideoCapture(0) # 0번 카메라 vid로 지정!
 
 blue_color=(255,0,0)
 
