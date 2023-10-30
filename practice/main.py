@@ -34,7 +34,7 @@ while(True):
 	print(len(results.pandas().xyxy[0].xmin)) # 탐지된 객체의 수 출력하기
 	for i in range(len(results.pandas().xyxy[0].xmin)): # 탐지된 객체의 수만큼 반복
 		if(results.pandas().xyxy[0].name[i]=="Alsaeuchip" and results.pandas().xyxy[0].confidence[i]>0.7):
-			date="알새우칩입니다."
+			date="알새우칩입니다." # 문자열 저장
 			s.say(data)  
 			s.runAndWait()  
 			frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3)
