@@ -36,7 +36,7 @@ while(True):
 		if(results.pandas().xyxy[0].name[i]=="Alsaeuchip" and results.pandas().xyxy[0].confidence[i]>0.7): # 만약, 탐지된 객체의 이름이 "Alsaeuchip"이고, 신뢰도가 0.7보다 크다면
 			date="알새우칩입니다." # 문자열 date 저장
 			s.say(data) # 문자열 date 음성으로 읽을 수 있도록!
-			s.runAndWait()  
+			s.runAndWait() # 음성 출력이 완료될 때까지 대기
 			frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3) # 사각형 그리기!
 			cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
 		
