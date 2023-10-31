@@ -38,7 +38,7 @@ while(True):
 			s.say(data) # 문자열 date 음성으로 읽을 수 있도록!
 			s.runAndWait() # 음성 출력이 완료될 때까지 대기
 			frame=cv2.rectangle(frame, (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), (int(results.pandas().xyxy[0].xmax[i]), int(results.pandas().xyxy[0].ymax[i])), blue_color, 3) # 사각형 그리기!
-			cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+			cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2) # 글자 적기!
 		
 		elif(results.pandas().xyxy[0].name[i]=="Backside" and results.pandas().xyxy[0].confidence[i]>0.7):
 			date="뒷면입니다. 앞으로 돌려주세요."
