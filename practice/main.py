@@ -33,7 +33,7 @@ while(True):
 	# (xmin, ymin)은 왼쪽 상단 좌표고, (xmax, ymax)는 오른쪽 하단 좌표다!
 	print(len(results.pandas().xyxy[0].xmin)) # 탐지된 객체의 수 출력하기
 	for i in range(len(results.pandas().xyxy[0].xmin)): # 탐지된 객체의 수만큼 반복
-		if(results.pandas().xyxy[0].name[i]=="Alsaeuchip" and results.pandas().xyxy[0].confidence[i]>0.7):
+		if(results.pandas().xyxy[0].name[i]=="Alsaeuchip" and results.pandas().xyxy[0].confidence[i]>0.7): # 만약, 탐지된 객체의 이름이 "Alsaeuchip"이고, 신뢰도가 0.7보다 크다면
 			date="알새우칩입니다." # 문자열 date 저장
 			s.say(data) # 문자열 date 음성으로 읽을 수 있도록!
 			s.runAndWait()  
