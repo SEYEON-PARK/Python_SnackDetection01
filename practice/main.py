@@ -202,7 +202,7 @@ while(True):
 			cv2.putText(frame, results.pandas().xyxy[0].name[i]+str(results.pandas().xyxy[0].confidence[i]), (int(results.pandas().xyxy[0].xmin[i]), int(results.pandas().xyxy[0].ymin[i])), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
 		
     # Display the resulting frame
-	cv2.imshow('frame', frame)
+	cv2.imshow('frame', frame) # 이미지 화면에 띄우기
 	
 
 	# s.say(data)  
