@@ -212,7 +212,7 @@ while(True):
 	# quitting button you may use any
 	# desired button of your choice
 	if cv2.waitKey(1) & 0xFF == ord('q'): # 무한 반복 종료 조건('q' 입력) 설정
-		break
+		break # while문 빠져 나가기!
 
 # After the loop release the cap object
 vid.release()
