@@ -215,6 +215,6 @@ while(True):
 		break # while문 빠져 나가기!
 
 # After the loop release the cap object
-vid.release()
+vid.release() # 카메라 놓아주기!
 # Destroy all the windows
 cv2.destroyAllWindows()
