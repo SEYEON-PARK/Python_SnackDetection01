@@ -1,5 +1,5 @@
 # 사진 파일들 이름 바꾸기! 0000~쭉!
-import os
+import os # 이름을 바꿔주기 위해!
    
 folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack01/pic05" # 폴더 위치 저장
 
