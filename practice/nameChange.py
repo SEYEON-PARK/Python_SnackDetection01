@@ -1,7 +1,7 @@
 # 사진 파일들 이름 바꾸기! 0000~쭉!
 import os
    
-folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack01/pic05"
+folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack01/pic05" # 폴더 위치 저장
 
 # 앞에 붙는 f는 포멧이고, 앞에 붙여줘야 한다.
 for count, filename in enumerate(os.listdir(folder)): # 사진들이 리스트(?) 안에 들어있다.
