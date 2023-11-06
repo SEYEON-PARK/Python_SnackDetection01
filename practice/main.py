@@ -21,7 +21,7 @@ while(True):
     
     # Capture the video frame
 	# by frame
-	ret, frame = vid.read()
+	ret, frame = vid.read() # 카메라로부터 읽기!
 	
 	
 	results=model(frame) # 만든 모델로 frame 분석!
