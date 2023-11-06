@@ -5,7 +5,7 @@ folder = "C:/Users/april/Desktop/2023학년도 1학기/Python 프로젝트/snack
 
 # 앞에 붙는 f는 포멧이고, 앞에 붙여줘야 한다.
 for count, filename in enumerate(os.listdir(folder)): # 사진들이 리스트(?) 안에 들어있다.
-    dst = f"{str(count+2817).zfill(4)}.jpg" # 이 이름으로 저장할 거다!(이름 앞에 번호도 함께 저장!)
+    dst = f"{str(count+2817).zfill(4)}.jpg" # 이 이름으로 저장할 거다!(원하는 번호로 저장!)
     src =f"{folder}/{filename}"  # foldername/filename, if .py file is outside folder # 원래 파일 이름
     dst =f"{folder}/{dst}" # 바꾸고 싶은 파일 이름
         
