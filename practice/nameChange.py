@@ -11,7 +11,7 @@ for count, filename in enumerate(os.listdir(folder)): # 사진들이 리스트(?
         
     # rename() function will
     # rename all the files
-    os.rename(src, dst) # 여기서 rename이라는 거는 경로 전체를 변경하는 거다!
+    os.rename(src, dst) # 사진 파일 이름 바꾸기!(여기서 rename이라는 거는 경로 전체를 변경하는 거다!)
     print("done") # 성공적으로 끝났음을 출력해주기!
 
 '''
