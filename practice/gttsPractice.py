@@ -4,6 +4,6 @@ from playsound import playsound # 음성 파일을 재생하기 위해
 text ="재밌게 놀아!" # 텍스트 문자열
 
 tts = gTTS(text=text, lang='ko')
-tts.save("hello.mp3")
+tts.save("hello.mp3") # 음성 파일 저장하기
 playsound("hello.mp3")
 
