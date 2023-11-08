@@ -5,5 +5,5 @@ text ="재밌게 놀아!" # 텍스트 문자열
 
 tts = gTTS(text=text, lang='ko')
 tts.save("hello.mp3") # 음성 파일 저장하기
-playsound("hello.mp3")
+playsound("hello.mp3") # 음성 파일 실행하기
 
